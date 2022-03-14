@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
 
 const config = {
   mode: "production",
@@ -51,7 +50,6 @@ const config = {
       filename: "index.html",
     }),
     new CleanWebpackPlugin(),
-    new Dotenv(),
     new webpack.ProvidePlugin({
       Buffer: ["buffer", "Buffer"],
     }),
