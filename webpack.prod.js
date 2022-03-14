@@ -2,6 +2,8 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
+const isDevelopment = process.env.NODE_ENV !== "production";
 
 const config = {
   mode: "production",
@@ -53,7 +55,10 @@ const config = {
     new webpack.ProvidePlugin({
       Buffer: ["buffer", "Buffer"],
     }),
-  ],
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(dotenv.parsed),
+    }),
+  ].filter(Boolean),
   resolve: {
     fallback: {
       buffer: require.resolve("buffer/"),
