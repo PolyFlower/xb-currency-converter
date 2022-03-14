@@ -37,7 +37,7 @@
             </div>
 
             <div class="input_component">
-              <input type="number" id="input-amount" min="1" />
+              <input type="number" id="input-amount" min="0" oninput="this.value = Math.abs(this.value)" />
             </div>
 
             <div class="submit_component">
