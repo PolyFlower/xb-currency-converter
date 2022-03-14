@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;700&display=swap");
+@import "normalize.css";
+@import "vars.scss";
+@import "./footer/index";
+@import "./header/index";
+@import "./main/index";
+
+html,
+body {
+  font-family: $font-family-poppins;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

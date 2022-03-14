@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Convertd - Currency converter</title>
+  </head>
+  <body>
+    <!-- App wrapper -->
+    <div class="app-wrapper">
+      <!-- Header -->
+      <div class="section-wrapper">
+        <header class="cnt__header">
+          <a href="/" class="brand-logo">convertd</a>
+        </header>
+      </div>
+      <!-- Content -->
+      <div class="section-wrapper">
+        <div class="converter_container">
+          <div class="converter_header">
+            <div class="bar">
+              <h1>Converter</h1>
+            </div>
+          </div>
+
+          <div class="converter_content">
+            <div class="selector_component">
+              <select name="currency" id="currency-selector">
+                <option value="">Select currency</option>
+                <option value="USD">USD</option>
+                <option value="RUB">RUB</option>
+                <option value="CNY">CNY</option>
+                <option value="BYN">BYN</option>
+                <option value="EUR">EUR</option>
+              </select>
+            </div>
+
+            <div class="input_component">
+              <input type="number" id="input-amount" />
+            </div>
+
+            <div class="submit_component">
+              <button type="submit" id="submit-button">Exchange Rates</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="section-wrapper">
+        <footer>
+          <span>2022 ©</span>
+          Developed by
+          <a href="https://github.com/PolyFlower">
+            <span>PolyFlower </span>
+            <span class="wave">🖐</span>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
