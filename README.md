@@ -1,5 +1,7 @@
 ## Assignment for xbsoftware
 
-###Currency converter coded with JS & TS, without any UI framework
+Was told that person reviewed this and gave 4/5. Well... It's more like 2/5.
 
-![Alt Text](https://res.cloudinary.com/btchead/image/upload/v1648298024/chrome_7tVJA695v2_oscyke.gif)
+Very old one, can't get vercel deployment.
+
+### Currency converter coded with JS & TS, without any UI framework
